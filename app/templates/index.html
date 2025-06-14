@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store Monitoring Report</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Store Monitoring</h1>
+
+        <div class="input-group">
+            <input type="text" id="storeIdInput" placeholder="Enter Store ID">
+            <button id="triggerReportBtn" disabled>Trigger New Report</button>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="input-group">
+            <input type="text" id="reportIdInput" placeholder="Enter Report ID">
+            <button id="getReportBtn">Get Report Status</button>
+        </div>
+
+        <div id="statusArea">
+            Welcome! Enter a Store ID to trigger a new report or a Report ID to check status.
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
